@@ -1,0 +1,23 @@
+<div class="table-responsive container">
+  <!--<div *ngFor="let customer of customerList" class='row'>
+       {{customer.name}} - {{customer.hospital}} - {{customer.department}} 
+  </div>
+-->
+  <table class="table">
+      <caption>医生信息表</caption>
+      <thead>
+         <tr>
+            <th>医生姓名</th>
+            <th>医院</th>
+            <th>科室</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let customer of customerList">
+            <td>{{customer.name}}</td>
+            <td>{{customer.hospital}}</td>
+            <td>{{customer.department}}</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
